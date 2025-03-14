@@ -29,7 +29,8 @@ str.replace() # str.replace(old, new)-Замінює всі входження �
 str.find() #str.find(sub)-Підраховує кількість входжень підрядка sub.
 # print("hello hello world".count("hello"))  # 2
 
-str.startswith(), str.endswith() #str.startswith(prefix), str.endswith(suffix)-Перевіряє, чи починається (startswith) або закінчується (endswith) рядок заданим підрядком.
+str.startswith(), str.endswith() #str.startswith(prefix), str.endswith(suffix)-Перевіряє, чи починається (startswith)
+# або закінчується (endswith) рядок заданим підрядком.
 # print("hello world".startswith("hello"))  # True
 # print("hello world".endswith("world"))  # True
 
