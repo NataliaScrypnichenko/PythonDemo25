@@ -441,3 +441,17 @@ print('*'*25) #можна умножати
 # weight = 70.5
 # string = f'Hello, my name is {name} and my age is {age} and my weight is {weight}'
 # print(string) # створення
+
+enumerate() #=дає змогу витянуьт із списка індекс під яким знаходиться якесь словo
+
+
+# for i in l: # ітеруємо тобто рoзбитаємо список
+#     print(i) # виводимо ці слова
+# тепер ми вложимо функцію яка дасть індикси
+
+'''l= ['appell', 'pen', 'car']
+
+for i, v in enumerate(l): # i= де це індекс v= велю значення
+    print(i) # отримаємо кортеж (0, 'appell'),(1, 'pen'),(2, 'car')
+    print(v) # appell pen car'''
+
