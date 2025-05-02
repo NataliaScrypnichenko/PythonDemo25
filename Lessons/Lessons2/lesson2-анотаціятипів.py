@@ -17,7 +17,7 @@
 
 ##########################################################################
 # біліотеки пайтона
-# import typing #=забирати типи
+# import typing,TypedDict,Callable #=забирати типи
 # a:typing.Any       # це все
 from typing import Any, TypedDict,Callable# краще так робити імпорт і можемо писати свої типи
 a:Any='ghlol'
@@ -42,7 +42,7 @@ users:list[User]=[
     {'name': 'Nata', 'age': 35,'house':67},
 ]
 
-# Як типізація ф-ї (a:str,b:int) це типізація (Callable)=на замиканя про типізована
+# Як типізація ф-ї (a:str,b:int) це типізація (Callable)=на замиканя про типізована (Callable)=означає що повертає функцію.і описуємо типізацію що вона виконує
 def counter(a:str,b:int)->Callable[[bool,list[str]],int]:  # ф-я повертає ф-ію?[[bool,list[str]],int]=що пиймає, (,int)= що повртає=
                                                         # це є повністю протипізована ф-я
     count=0

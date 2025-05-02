@@ -8,7 +8,7 @@
 # expanded_form(70304) # return '70000 + 300 + 4'
 #
 
-def expanded_form(num:int)->str:
+'''def expanded_form(num:int)->str:
         st=str(num) # перетворюємо число в стрінгу
         length = len(st)-1 # віднімаються 0 від числа і розбиває його
         result = [ ] # записуємо результат
@@ -19,4 +19,18 @@ def expanded_form(num:int)->str:
 
 print(expanded_form(42))
 print(expanded_form(70304))
+print(expanded_form(12))'''
+
+def expanded_form(num:int)->str:
+    st=str(num)
+    length=len(st)-1
+    res=[]
+    for i, ch in enumerate(st):
+        if ch !=0:
+            res.append(ch + '0'*(len(st)-i))
+    return '+'.join(res)+f'={st}'
+
+
 print(expanded_form(12))
+print(expanded_form(70304))
+print(expanded_form(42))
