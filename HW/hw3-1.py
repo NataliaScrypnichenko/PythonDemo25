@@ -14,13 +14,13 @@ class Rectangle: # прямоугольник
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.area = self.x * self.y # потрібно її сюди винисти(я зробила помилку)
+        self.area = self.x * self.y # потрібно її сюди винисти(я зробила помилку)щоб кожний раз не писати
 
     # def __str__(self):
     #     return  str (self. __dict__)- це не потрібно робити в виведені мат.фігур.
 
     def __add__(self, other: Self): #  + сумма
-        return self.area + other.area # Vself.x - other.y=так не потрібно робити моя помилка
+        return self.area + other.area # Vself.x - other.y =так не потрібно робити моя помилка
 
     def __sub__(self, other: Self): # - різниця
        return self.area - other.area
